@@ -12,6 +12,11 @@ import (
 	"path"
 )
 
+// Get credentials here: // https://console.eu-gb.bluemix.net/catalog/services/text-to-speech
+//
+// Price: 	Standard	The first million characters are free, €0.0151 EUR/THOUSAND CHAR
+// wc --chars /tmp/text | ruby -ne 'chars_cnt = Integer($_.split.first); estimated_price = chars_cnt * 0.0151 / 1000; printf("Estimated price: %.2f €\n", estimated_price)'
+
 // Data corresponds to the data required by the Watson API
 // See: - https://www.ibm.com/watson/developercloud/text-to-speech/api/v1/#synthesize audio
 //      - https://watson-api-explorer.mybluemix.net/apis/text-to-speech-v1#!/synthesize/postSynthesize
